@@ -15,7 +15,6 @@ public class GameScene extends Scene {
     private AnimationTimer timer;
     private Stone stone;
     private double deltaAlt=40;
-    //private ArrayList<DisplayLife> lifeLeft;
     private int nbLifeLeft=3;
     private int sizeHeart= 34;
 
