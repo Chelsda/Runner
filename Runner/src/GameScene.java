@@ -11,9 +11,6 @@ public class GameScene extends Scene {
     private StaticThings left;
     private StaticThings right;
     private DisplayLife life;
-    //private DisplayLife lifeUn;
-    //private DisplayLife lifeDeux;
-    //private DisplayLife lifeTrois;
     private Hero hero;
     private AnimationTimer timer;
     private Stone stone;
@@ -27,19 +24,9 @@ public class GameScene extends Scene {
         this.left = new StaticThings(0,0,"desert.png");
         this.right = new StaticThings(800,0,"desert.png");
         this.life = new DisplayLife(0,0,"vie.png");
-        //this.lifeUn = new DisplayLife(0,0,"vie.png");
-        //this.lifeDeux = new DisplayLife(sizeHeart,0,"vie.png");
-        //this.lifeTrois = new DisplayLife(2*sizeHeart,0,"vie.png");
-        //this.lifeLeft=new ArrayList<DisplayLife>();
-        //lifeLeft.add(lifeUn);
-        //lifeLeft.add(lifeDeux);
-        //lifeLeft.add(lifeTrois);
         this.hero = new Hero(100, 250, "heros.png");
         this.camera = new Camera(this.hero);
-        //this.foes= new ArrayList<Foe>();
         this.stone = new Stone(800,290,"pierre.png");
-        //foes.add(250,stone);
-        //posFoe=foes.indexOf(stone);
 
         this.timer = new AnimationTimer() {
             @Override
@@ -81,8 +68,5 @@ public class GameScene extends Scene {
     public Stone getFoe(){
         return stone;
     }
-    /*public ArrayList<DisplayLife> getLifeLeft(){
-        return lifeLeft;
-    }*/
 
 }
